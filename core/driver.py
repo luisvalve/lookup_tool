@@ -1,3 +1,4 @@
+# lookup_tool/core/driver.py
 from selenium.webdriver.chrome.options import Options
 from undetected_chromedriver import Chrome
 from core.logger import logger
@@ -6,9 +7,10 @@ import random
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15",
-    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/89.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.92 Safari/537.36"
 ]
 
 
@@ -35,14 +37,3 @@ def init_driver(proxy=None):
     driver = Chrome(options=options)
     driver.set_page_load_timeout(30)
     return driver
-
-
-def test_storage_access():
-    try:
-        driver = init_driver()
-        driver.get("https://www.amazon.com")
-        driver.quit()
-        return True
-    except Exception as e:
-        logger.error(f"Storage test failed: {e}")
-        return False
