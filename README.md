@@ -100,10 +100,3 @@ PROXY_URL = "http://username:password@proxyhost:port"
 ## 📄 License
 
 MIT
-
-```
-
----
-
-Would you like me to generate the actual `requirements.txt` and `.gitignore` too?
-```
