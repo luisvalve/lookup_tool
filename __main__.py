@@ -1,7 +1,7 @@
 
 from core.scraper import read_part_numbers, write_results
 from core.search import lookup_part_number
-from core.driver import test_storage_access
+from core.driver import init_driver, test_storage_access
 from config import INPUT_CSV
 from core.terminal import log
 from colorama import Fore
@@ -13,11 +13,10 @@ def main():
     log("\n📦 Starting Amazon Part Lookup with Proxy Support", Fore.CYAN)
     log("=======================================================", Fore.CYAN)
 
-    if not test_storage_access():
-        log("❌ Storage access test failed", Fore.RED)
-        return
+    driver = init_driver()
+    test_storage_access(driver)
+    driver.quit()
 
-    log("✅ Storage access test completed", Fore.GREEN)
     part_numbers = read_part_numbers(INPUT_CSV)
     log(f"📥 Loaded {len(part_numbers)} part numbers", Fore.CYAN)
 

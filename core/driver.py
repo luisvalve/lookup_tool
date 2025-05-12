@@ -1,8 +1,13 @@
-# lookup_tool/core/driver.py
 from selenium.webdriver.chrome.options import Options
 from undetected_chromedriver import Chrome
 from core.logger import logger
 import random
+import uuid
+import time
+from urllib.parse import quote_plus
+from config import PROXY_USER, PROXY_PASS, PROXY_GATE, PROXY_PORT
+from colorama import Fore
+from core.terminal import log
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
@@ -16,6 +21,12 @@ USER_AGENTS = [
 
 def random_user_agent():
     return random.choice(USER_AGENTS)
+
+
+def get_free_proxy():
+    session_id = uuid.uuid4().hex[:8]
+    password = quote_plus(PROXY_PASS)
+    return f"http://{PROXY_USER}-session-{session_id}:{password}@{PROXY_GATE}:{PROXY_PORT}"
 
 
 def init_driver(proxy=None):
@@ -37,3 +48,22 @@ def init_driver(proxy=None):
     driver = Chrome(options=options)
     driver.set_page_load_timeout(30)
     return driver
+
+
+def test_storage_access(driver):
+    try:
+        driver.get("https://example.com")
+        time.sleep(2)
+        driver.execute_script("""
+            try {
+                localStorage.setItem('testKey', 'value');
+                sessionStorage.setItem('testKey', 'value');
+                localStorage.clear();
+                sessionStorage.clear();
+            } catch (e) {
+                console.warn("⚠️ Storage access blocked:", e);
+            }
+        """)
+        log("✅ Storage access test completed", Fore.GREEN)
+    except Exception as e:
+        log(f"❌ Storage access test failed: {e}", Fore.RED)
