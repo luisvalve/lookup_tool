@@ -1,0 +1,27 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+**/__pycache__/
+**/*.pyc
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Logs
+*.log
+logs/
+
+# macOS system files
+.DS_Store
+
+# Editor directories and temp files
+.vscode/
+.idea/
+*.swp
+
+# CSV input/output
+part_lookup_input.csv
+part_lookup_output.csv

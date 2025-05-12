@@ -1,3 +1,4 @@
+
 import time
 import random
 import uuid
@@ -18,7 +19,7 @@ def log_duckduckgo_fallback(url):
 
 
 def log_google_fallback(url):
-    log(f"🌐 Google fallback: {url}", Fore.LIGHTYELLOW_EX)
+    log(f"🌐 Google fallback: {url}", Fore.YELLOW)
 
 
 def log_proxy_attempt(attempt):

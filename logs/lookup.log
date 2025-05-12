@@ -133,3 +133,165 @@
 2025-05-11 19:30:47.607 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
 2025-05-11 19:30:53.944 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
 2025-05-11 19:31:04.210 | INFO     | __main__:main:31 - ✅ Results written to part_lookup_output.csv
+2025-05-11 19:37:24.127 | INFO     | __main__:main:10 - 
+📦 Starting Amazon Part Lookup with Proxy Support
+2025-05-11 19:37:24.128 | INFO     | __main__:main:11 - =======================================================
+2025-05-11 19:37:30.342 | INFO     | __main__:main:18 - 📥 Loaded 3 part numbers from part_lookup_input.csv
+2025-05-11 19:37:30.343 | INFO     | __main__:main:22 - 
+🔍 [1/3] Looking up: 072-9999
+2025-05-11 19:37:33.128 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:37:39.346 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:37:48.682 | INFO     | __main__:main:22 - 
+🔍 [2/3] Looking up: 103-2110
+2025-05-11 19:37:51.193 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:37:55.971 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:38:06.304 | INFO     | __main__:main:22 - 
+🔍 [3/3] Looking up: 103-2129
+2025-05-11 19:38:09.094 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:38:15.194 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:38:25.965 | INFO     | __main__:main:31 - ✅ Results written to part_lookup_output.csv
+2025-05-11 19:43:09.735 | INFO     | __main__:main:10 - 
+📦 Starting Amazon Part Lookup with Proxy Support
+2025-05-11 19:43:09.735 | INFO     | __main__:main:11 - =======================================================
+2025-05-11 19:43:15.027 | INFO     | __main__:main:18 - 📥 Loaded 99 part numbers from part_lookup_input.csv
+2025-05-11 19:43:15.027 | INFO     | __main__:main:22 - 
+🔍 [1/99] Looking up: 072-9999
+2025-05-11 19:43:17.644 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:43:23.439 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:43:33.042 | INFO     | __main__:main:22 - 
+🔍 [2/99] Looking up: 103-2110
+2025-05-11 19:43:35.977 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:43:42.154 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:43:51.738 | INFO     | __main__:main:22 - 
+🔍 [3/99] Looking up: 103-2129
+2025-05-11 19:43:54.600 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:44:01.083 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:44:10.711 | INFO     | __main__:main:22 - 
+🔍 [4/99] Looking up: 103-2145
+2025-05-11 19:44:13.546 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:44:18.849 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:44:30.128 | INFO     | __main__:main:22 - 
+🔍 [5/99] Looking up: 103-2146
+2025-05-11 19:44:33.086 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:44:38.842 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:44:48.712 | INFO     | __main__:main:22 - 
+🔍 [6/99] Looking up: 103-2147
+2025-05-11 19:44:51.525 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:44:56.661 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:45:06.535 | INFO     | __main__:main:22 - 
+🔍 [7/99] Looking up: 103-2155
+2025-05-11 19:45:09.281 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:45:14.484 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:45:24.684 | INFO     | __main__:main:22 - 
+🔍 [8/99] Looking up: 103-2178
+2025-05-11 19:45:27.770 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:45:34.755 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:45:44.232 | INFO     | __main__:main:22 - 
+🔍 [9/99] Looking up: 103-2193
+2025-05-11 19:45:47.116 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:45:52.477 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:46:03.047 | INFO     | __main__:main:22 - 
+🔍 [10/99] Looking up: 103-2250
+2025-05-11 19:46:06.128 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:46:12.819 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:46:24.412 | INFO     | __main__:main:22 - 
+🔍 [11/99] Looking up: 103-2257
+2025-05-11 19:46:27.210 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:46:32.807 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:46:43.158 | INFO     | __main__:main:22 - 
+🔍 [12/99] Looking up: 103-2258
+2025-05-11 19:46:46.115 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:46:52.389 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:47:03.076 | INFO     | __main__:main:22 - 
+🔍 [13/99] Looking up: 103-2260
+2025-05-11 19:47:05.778 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:47:11.854 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:47:22.590 | INFO     | __main__:main:22 - 
+🔍 [14/99] Looking up: 103-2264
+2025-05-11 19:47:25.374 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:47:31.163 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:47:42.379 | INFO     | __main__:main:22 - 
+🔍 [15/99] Looking up: 103-2280
+2025-05-11 19:47:44.980 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:47:49.730 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:47:59.664 | INFO     | __main__:main:22 - 
+🔍 [16/99] Looking up: 103-2281
+2025-05-11 19:48:02.484 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:48:07.970 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:48:18.026 | INFO     | __main__:main:22 - 
+🔍 [17/99] Looking up: 103-2282
+2025-05-11 19:48:20.904 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:48:25.995 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:48:36.378 | INFO     | __main__:main:22 - 
+🔍 [18/99] Looking up: 103-2287
+2025-05-11 19:48:39.372 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:48:45.054 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:48:55.357 | INFO     | __main__:main:22 - 
+🔍 [19/99] Looking up: 103-2288
+2025-05-11 19:48:58.504 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:49:03.925 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:49:16.172 | INFO     | __main__:main:22 - 
+🔍 [20/99] Looking up: 103-2312
+2025-05-11 19:49:19.027 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:49:24.387 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:49:34.453 | INFO     | __main__:main:22 - 
+🔍 [21/99] Looking up: 103-2314
+2025-05-11 19:49:37.589 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:49:44.863 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:49:56.557 | INFO     | __main__:main:22 - 
+🔍 [22/99] Looking up: 103-2322
+2025-05-11 19:49:59.807 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:50:06.113 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:50:17.124 | INFO     | __main__:main:22 - 
+🔍 [23/99] Looking up: 103-2414
+2025-05-11 19:50:20.237 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:50:26.368 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:50:37.135 | INFO     | __main__:main:22 - 
+🔍 [24/99] Looking up: 103-2441
+2025-05-11 19:50:40.010 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:50:46.718 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:50:56.497 | INFO     | __main__:main:22 - 
+🔍 [25/99] Looking up: 103-2450
+2025-05-11 19:50:59.144 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:51:04.110 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:51:14.895 | INFO     | __main__:main:22 - 
+🔍 [26/99] Looking up: 103-2458
+2025-05-11 19:51:17.577 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:51:23.732 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:51:33.906 | INFO     | __main__:main:22 - 
+🔍 [27/99] Looking up: 103-2487
+2025-05-11 19:51:36.555 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:51:42.846 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:51:52.273 | INFO     | __main__:main:22 - 
+🔍 [28/99] Looking up: 103-2489
+2025-05-11 19:51:54.966 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:52:01.636 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:52:12.813 | INFO     | __main__:main:22 - 
+🔍 [29/99] Looking up: 103-2491
+2025-05-11 19:52:15.641 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:52:22.116 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:52:33.128 | INFO     | __main__:main:22 - 
+🔍 [30/99] Looking up: 103-2502
+2025-05-11 19:52:35.921 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 19:52:40.892 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 19:52:52.553 | INFO     | __main__:main:22 - 
+🔍 [31/99] Looking up: 103-2503
+2025-05-11 20:02:09.757 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:02:16.114 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 20:02:28.576 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:07:49.881 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:07:55.695 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 20:08:09.007 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:08:15.481 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 20:08:28.620 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:08:35.300 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 20:08:47.298 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:08:53.491 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 20:12:13.348 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:12:19.326 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 20:12:32.253 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:12:37.017 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 20:12:49.190 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 1/2
+2025-05-11 20:12:55.379 | INFO     | core.search:lookup_part_number:21 - 🔄 Attempt 2/2
+2025-05-11 20:19:30.874 | INFO     | core.driver:init_driver:33 - 🌍 Proxy applied to browser: http://spng7pbrk7-session-9be8caa1:8+EFo8u7yEgPcw4noo@gate.decodo.com:10001
+2025-05-11 20:19:33.927 | INFO     | core.driver:init_driver:33 - 🌍 Proxy applied to browser: http://spng7pbrk7-session-f157af7f:8+EFo8u7yEgPcw4noo@gate.decodo.com:10001
