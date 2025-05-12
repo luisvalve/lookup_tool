@@ -1,13 +1,15 @@
-# Central configuration
 
-INPUT_CSV = "part_lookup_input.csv"  # CSV with part numbers
+# Proxy credentials and gateway
+PROXY_USER = "spng7pbrk7"
+PROXY_PASS = "8+EFo8u7yEgPcw4noo"
+PROXY_GATE = "gate.decodo.com"
+PROXY_PORT = "10001"
+
+# Enable proxy fallback
 USE_PROXY = True
-PROXY_URL = "http://your-proxy-url:port"  # Replace with your proxy or leave blank
 
-# Timing
-REQUEST_TIMEOUT = 30
-WAIT_BETWEEN_REQUESTS = 3
+# Request delay range between retries (in seconds)
+REQUEST_DELAY_SECONDS = (2.5, 4.5)
 
-# Search Fallbacks
-ENABLE_DUCKDUCKGO_FALLBACK = True
-ENABLE_GOOGLE_FALLBACK = True
+# CSV Input (not used directly here)
+INPUT_CSV = "part_lookup_input.csv"

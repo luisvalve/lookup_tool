@@ -1,22 +1,48 @@
-from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from undetected_chromedriver import Chrome, ChromeOptions
+from undetected_chromedriver import Chrome
+from core.logger import logger
+import random
 
-from config import USE_PROXY, PROXY_URL
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15",
+    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+]
 
 
-def create_browser():
-    options = ChromeOptions()
+def random_user_agent():
+    return random.choice(USER_AGENTS)
+
+
+def init_driver(proxy=None):
+    options = Options()
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
-    options.headless = False  # Set True to run in headless mode
+    options.add_argument("--disable-extensions")
+    options.add_argument("--start-maximized")
 
-    if USE_PROXY and PROXY_URL:
-        options.add_argument(f'--proxy-server={PROXY_URL}')
+    user_agent = random_user_agent()
+    options.add_argument(f"--user-agent={user_agent}")
+
+    if proxy:
+        options.add_argument(f"--proxy-server={proxy}")
+        logger.info(f"🌍 Proxy applied to browser: {proxy}")
 
     driver = Chrome(options=options)
     driver.set_page_load_timeout(30)
     return driver
 
+
+def test_storage_access():
+    try:
+        driver = init_driver()
+        driver.get("https://www.amazon.com")
+        driver.quit()
+        return True
+    except Exception as e:
+        logger.error(f"Storage test failed: {e}")
+        return False
