@@ -1,4 +1,3 @@
-
 from core.scraper import read_part_numbers, write_results
 from core.search import lookup_part_number
 from core.driver import init_driver, test_storage_access
@@ -6,6 +5,12 @@ from config import INPUT_CSV
 from core.terminal import log
 from colorama import Fore
 import time
+import csv
+
+
+def read_part_numbers(file_path):
+    with open(file_path, newline='', encoding='utf-8') as f:
+        return [row['PartNumber'].strip() for row in csv.DictReader(f)]
 
 
 def main():
