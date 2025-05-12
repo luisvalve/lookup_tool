@@ -1,25 +1,26 @@
 # 🔍 Amazon Part Lookup Tool
 
-A Python-based scraper that automates Amazon product lookups using part numbers, with full proxy support and search fallbacks.
+A Python-based scraper that automates Amazon product lookups using part numbers, with proxy support and fallback search.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 Amazon + DuckDuckGo + Google search fallback
-- 🛡️ Proxy rotation with DecoDo (session-based)
-- 🧠 Intelligent product match filtering
-- 📄 CSV input/output support
+- 🔍 Amazon + DuckDuckGo + Google fallback
+- 🧠 Intelligent title match filtering
+- 📄 CSV input/output
+- 🧰 Modular Python code
+- 🛡️ Proxy rotation with session IDs
 - 🎭 Rotating user agents
-- ✅ Modular structure
-- 🧪 GitHub Actions test automation
+- ✅ Pre-run Amazon access check
+- 🧪 GitHub Actions CI
 
 ---
 
 ## 📦 Requirements
 
-- Python 3.9+
-- Chrome installed
+- Python 3.9 or higher
+- Chrome installed locally
 - Install dependencies:
 
 ```bash
