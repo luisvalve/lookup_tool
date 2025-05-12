@@ -8,6 +8,15 @@ import time
 import csv
 
 
+def write_results(results, output_file="part_lookup_output.csv"):
+    with open(output_file, mode="w", newline="", encoding="utf-8") as f:
+        fieldnames = ["PartNumber", "ASIN", "Title", "URL", "Bullets", "CharCount"]
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in results:
+            writer.writerow(row)
+
+
 def read_part_numbers(file_path):
     with open(file_path, newline='', encoding='utf-8') as f:
         return [row['PartNumber'].strip() for row in csv.DictReader(f)]
@@ -29,14 +38,17 @@ def main():
     for idx, part in enumerate(part_numbers, 1):
         log(f"\n🔍 [{idx}/{len(part_numbers)}] Looking up: {part}".ljust(60), Fore.BLUE)
         try:
-            title, url = lookup_part_number(part)
+            info = lookup_part_number(part)
         except Exception as e:
             log(f"❌ Error looking up {part}: {e}", Fore.RED)
-            title, url = None, None
+            info = None
         results.append({
             "PartNumber": part,
-            "Title": title or "NOT FOUND",
-            "URL": url or "N/A"
+            "Title": info["Title"] if info else "NOT FOUND",
+            "ASIN": info["ASIN"] if info else "N/A",
+            "URL": info["URL"] if info else "N/A",
+            "Bullets": info["Bullets"] if info else "N/A",
+            "CharCount": info["CharCount"] if info else 0
         })
         log(f"📊 Progress: {idx}/{len(part_numbers)} complete", Fore.LIGHTCYAN_EX)
 
