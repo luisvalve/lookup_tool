@@ -24,7 +24,6 @@ A Python-based scraper that automates Amazon product lookups using part numbers,
 - Install dependencies:
 
 ```bash
-pip install -r requirements.txt
 
 # Step 1 — Install dependencies
 pip install -r requirements.txt
