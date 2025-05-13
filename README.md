@@ -4,6 +4,7 @@ A sophisticated Python-based scraper that automates Amazon product lookups using
 
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
@@ -152,6 +153,10 @@ Built using:
 - Selenium WebDriver
 - undetected-chromedriver
 - Python's rich ecosystem
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
