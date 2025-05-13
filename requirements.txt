@@ -1,4 +1,6 @@
-selenium>=4.10.0
-undetected-chromedriver>=3.5.5
-loguru>=0.7.2
-colorama>=0.4.6
+selenium==4.10.0
+undetected-chromedriver==3.5.5
+loguru==0.7.2
+colorama==0.4.6
+pytest==8.3.5
+pytest-mock==3.12.0
