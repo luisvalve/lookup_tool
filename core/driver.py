@@ -47,6 +47,17 @@ def init_driver(proxy=None):
 
     driver = Chrome(options=options)
     driver.set_page_load_timeout(30)
+
+    # Stealth patch to disable navigator.webdriver detection
+    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+        "source": """
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            });
+            console.log('🛡️ navigator.webdriver disabled');
+        """
+    })
+
     return driver
 
 
